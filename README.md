@@ -4,4 +4,4 @@
 <code>pip install bitmex-ws</code>
 <br>
 <p>start</p>
-<code>py "main no gui.py"</code>
+<code>py mainNogui.py</code>
