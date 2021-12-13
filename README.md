@@ -2,4 +2,6 @@
 
 <code>pip install python-binance</code>
 <code>pip install bitmex-ws</code>
-<code>py main_no_gui.py
+<br>
+<p>start</p>
+<code>py "main no gui.py"</code>
