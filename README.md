@@ -1,4 +1,4 @@
 <p> funding for bitmex and binance</p>
 
-pip install python-binance
-pip install bitmex-ws
+<code>pip install python-binance</code>
+<code>pip install bitmex-ws</code>
