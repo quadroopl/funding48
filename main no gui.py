@@ -3,9 +3,6 @@ import threading
 import sys
 import logging
 import time
-import tkinter as tk
-from tkinter import messagebox, ttk
-
 
 #TODO: make bitmex and binance websocket py files and start both OKDONE
 
