@@ -9,19 +9,22 @@ from tkinter import messagebox, ttk
 
 #TODO: make bitmex and binance websocket py files and start both OKDONE
 
-#T1 is the Bitmex thread
+#Bitmex websocket
 T1 = threading.Thread(target=bitmexWSS.run)
 T1.start()
 
-#T2 is the Binance thread
+#Binance websocket
 T2 = threading.Thread(target=binanceWSS.run)
 T2.start()
 
+#For Testing purposes
 logging.info("Both BitMEX and Binance Threads started...")
+
 
 def start_everything():
     try:
         while True:
+            #Update terminal print statemnet every .2s
             print("XRPUSD: " + str(bitmexWSS.LastBitmex) + " | " + str(binanceWSS.LastBinance) , end = "\r" )
             time.sleep(0.2)
     except Exception as e:
@@ -30,7 +33,7 @@ def start_everything():
 T3 = threading.Thread(target=start_everything)
 T3.start()
 
-#Join BitMEX and Binance Listeners
+#rejoin bitmex and binance listeners
 T1.join()
 T2.join()
 
