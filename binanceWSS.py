@@ -21,7 +21,6 @@ def run():
         LastBinance = ("Binance BUY = "+ str(round(float(msg['data']['b']),4)) + " SELL = " + str(round(float(msg['data']['a']),4)) )
         #time.sleep(1)
 
-    # see Binance docs for stream names
     streams = ['xrpusdt@bookTicker']
     twm.start_multiplex_socket(callback=handle_socket_message, streams=streams)
 
